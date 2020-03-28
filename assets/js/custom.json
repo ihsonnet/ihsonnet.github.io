@@ -1,0 +1,52 @@
+{
+    "subtitles": [
+        "Freelancer",
+        "Programmer",
+        "Graphic Designer",
+        "Web Developer"
+    ],
+    "projects": [
+        {
+            "title": "Online Voting system",
+            "desc": "A Modern Online Voting system by which we can easily elected CR of our classes in school or colleges.",
+            "img": "onlinevotting.png",
+            "link": "https://github.com/ihsonnet/Online-Voting-System-or-CR-Election-System"
+        },
+        {
+            "title": "সনেটের বাংলা টেকনোলোজি ব্লগ",
+            "desc": "A bangla technology blog of mein, by which i share my technology knowledge with others which i learn everyday.",
+            "img": "sonnetsblogbn.png",
+            "link": "https://ihsonnet-bn.blogspot.com",
+            "award": ""
+        },
+        {
+            "title": "Sonnet'S Blog",
+            "desc": " 'Learn-Share & Explore the world' with this tegline , i try to share my technology knowledge with others which i learn everyday by this blog.",
+            "img": "sonnetsblog.png",
+            "link": "https://ihsonnet.blogspot.com"
+        }
+
+    ],
+    "skills": [
+        {
+            "name": "html",
+            "desc": "The stucture and backbone of every website, I have thorough experience with HTML 5, and it's integration with CSS, Search Engine Optimization through meta data, etc."
+        },
+        {
+            "name": "css",
+            "desc": "The style and design behind most of the internet, CSS 3 is my medium for creativity in websites, along with mobile readiness through media queries and libraries such as Bootstrap."
+        },
+        {
+            "name": "js",
+            "desc": "My programming language of choice, I have thorough experience with JavaScript, and am learning more efficient techniques through ES 6. Libraries I frequent include jQuery, React.js, and node.js."
+        },
+        {
+            "name": "mysql",
+            "desc": "The relational database management system behind many of my projects, I have thorough experience querying and sorting through SQL."
+        },
+        {
+            "name": "editors",
+            "desc": "Two of the most robust and widely used media editors of all time, I have decent experience with Photoshop and Illustrator, from photo editing and typography to optimizing media for web development."
+        }
+    ]
+}
