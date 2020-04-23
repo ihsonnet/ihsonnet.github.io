@@ -7,6 +7,12 @@
     ],
     "projects": [
         {
+            "title": "Covid-19 Visualizer | Bangladesh",
+            "desc": "A Bangladesh map visualizer uses to know corona virus update for every district of bangladesh.",
+            "img": "visualcovid.png",
+            "link": "https://ihsonnet.github.io/Covid19-Visualizer-BangladeshMap/"
+        },
+        {
             "title": "Online Voting system",
             "desc": "A Modern Online Voting system by which we can easily elected CR of our classes in school or colleges.",
             "img": "onlinevotting.png",
