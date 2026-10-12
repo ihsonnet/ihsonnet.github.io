@@ -232,7 +232,7 @@ function renderAbout(p) {
       ${p.about.map((t) => `<p>${esc(t)}</p>`).join('')}
       <dl class="about-meta">
         <div><dt>Based in</dt><dd>${p.locations.map(esc).join(' · ')}</dd></div>
-        <div><dt>Focus</dt><dd>${(p.focus || p.roles).map(esc).join(' · ')}</dd></div>
+        <div><dt>Focus</dt><dd>${esc(typeof p.focus === 'string' ? p.focus : (p.focus || p.roles).join(' · '))}</dd></div>
       </dl>
     </div>
 
