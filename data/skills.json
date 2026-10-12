@@ -12,7 +12,7 @@
   {
     "group": "Backend",
     "icon": "server",
-    "items": ["Spring Boot", "Spring Cloud Function", "Actix Web", "JPA / Hibernate", "REST APIs"]
+    "items": ["Spring Boot", "Django", "FastAPI", "Spring Cloud Function", "Actix Web", "JPA / Hibernate", "REST APIs"]
   },
   {
     "group": "Frontend & Mobile",
