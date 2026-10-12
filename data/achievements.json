@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Most Inspirational Award, NASA International Space Apps Challenge 2022",
+    "description": "Global winner. System architect of Team Diamonds, building “Diamond in the Sky”, a space-learning game for kids.",
+    "date": "2022",
+    "icon": "rocket",
+    "color": "blue",
+    "url": "https://2022.spaceappschallenge.org/challenges/2022-challenges/twinkle-twinkle-little-star/teams/team-diamonds/",
+    "linkLabel": "Team page"
+  },
+  {
+    "title": "QS Reimagine Education Awards — Judge",
+    "description": "Judging AI innovations in future education on the global evaluation panel.",
+    "date": "2026",
+    "icon": "award",
+    "color": "gold",
+    "url": "https://qsrea.evessiocloud.com/Reimagine2026/en/node/judgeprofile-injamamul-haque-sonet",
+    "linkLabel": "Judge profile"
+  },
+  {
+    "title": "Founder of FairMark AI",
+    "description": "AI-assisted assignment evaluation for Canvas, Moodle & Blackboard, with instructors in control of every grade.",
+    "date": "2024 – Present",
+    "image": "assets/logos/fairmark-mark.png",
+    "color": "purple",
+    "url": "https://fairmarkai.com",
+    "linkLabel": "fairmarkai.com"
+  }
+]

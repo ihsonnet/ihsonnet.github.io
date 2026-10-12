@@ -1,0 +1,212 @@
+[
+  {
+    "slug": "fairmark-ai",
+    "title": "FairMark AI",
+    "featured": true,
+    "year": "2024 – Present",
+    "role": "Founder",
+    "status": "Active",
+    "description": "AI-assisted assignment evaluation for Canvas, Moodle & Blackboard. Instructors keep full control of every final grade.",
+    "overview": [
+      "FairMark AI evaluates student submissions against the instructor’s rubric, giving every instructor a transparent, evidence-backed starting point. The instructor stays in control of every final grade.",
+      "It plugs directly into the LMS through LTI 1.3, so there are no new portals and no student training. Students submit as normal, the AI pre-evaluates, the instructor reviews, and the final grade posts back to the gradebook."
+    ],
+    "features": [
+      "Evidence-grounded scores: each rubric criterion cites exact passages, slides or lines",
+      "Immutable AI lock: evaluations are cryptographically timestamped on generation",
+      "Automatic grade passback to the LMS gradebook via LTI Advantage (AGS)",
+      "Configurable late-penalty engine with grace periods and hard cutoffs",
+      "Downloadable PDF evaluation report for every submission",
+      "Handles PDF, PPTX, DOCX and images, with slide- and page-level evidence"
+    ],
+    "tags": ["AI", "LTI 1.3", "Canvas", "Moodle", "Blackboard"],
+    "cover": { "logo": "assets/logos/fairmark-logo.png", "bg": "#ffffff" },
+    "links": { "live": "https://fairmarkai.com", "github": "" },
+    "gallery": []
+  },
+  {
+    "slug": "plasmin",
+    "title": "Plasmin 0.1",
+    "featured": true,
+    "year": "2020",
+    "role": "Creator",
+    "status": "Archived",
+    "description": "Messenger bot to find plasma donors in your area, filtering by blood group and location.",
+    "overview": [
+      "Built during the COVID-19 pandemic, Plasmin is a Facebook Messenger chatbot that connects patients who need convalescent plasma with recovered donors nearby.",
+      "Users can register as donors or search by blood group and district, all within a familiar chat interface."
+    ],
+    "features": [
+      "Conversational donor registration and search inside Facebook Messenger",
+      "Filtering by blood group and location",
+      "Spring Boot backend with JPA and a MySQL database"
+    ],
+    "tags": ["Java", "Spring Boot", "MySQL", "Messenger Bot"],
+    "cover": { "image": "assets/projects/plasmin.jpg" },
+    "links": { "live": "", "github": "https://github.com/ihsonnet/Plasmin0.1" },
+    "repo": "Plasmin0.1",
+    "gallery": ["assets/projects/plasmin.jpg"]
+  },
+  {
+    "slug": "secure-university-systems",
+    "title": "Secure University Systems",
+    "featured": true,
+    "year": "2021 – 2023",
+    "role": "Software Security Engineer",
+    "status": "Production",
+    "description": "End-to-end secure academic information systems for universities and institutions.",
+    "overview": [
+      "A suite of academic information systems — admissions, results, course registration and administration — designed with security as a first-class requirement.",
+      "Hardened authentication, fine-grained authorisation and audit trails protect sensitive student and institutional data."
+    ],
+    "features": [
+      "JWT-based stateless authentication with refresh rotation",
+      "Role- and attribute-based access control",
+      "Audit logging for every sensitive operation",
+      "OWASP Top 10 mitigations baked into the framework"
+    ],
+    "tags": ["Spring Boot", "Vue.js", "MySQL", "JWT"],
+    "cover": { "style": "emerald", "icon": "lock", "text": "Secure University Systems" },
+    "links": { "live": "", "github": "" },
+    "gallery": []
+  },
+  {
+    "slug": "space4e",
+    "title": "Space4E",
+    "featured": true,
+    "year": "2023",
+    "role": "Co-founder & Engineer",
+    "status": "Active",
+    "description": "Platform empowering space education, events and community for young explorers.",
+    "overview": [
+      "Space4E brings space science to young learners through events, learning resources and an online community.",
+      "The platform handles event registration, content publishing and community engagement."
+    ],
+    "features": [
+      "Event creation, registration and ticketing",
+      "Learning content and resource library",
+      "Community profiles and announcements",
+      "Cloud-hosted on AWS"
+    ],
+    "tags": ["Next.js", "TailwindCSS", "Django", "AWS"],
+    "cover": { "style": "space", "text": "space", "accent": "4E" },
+    "links": { "live": "", "github": "" },
+    "gallery": []
+  },
+  {
+    "slug": "diamond-in-the-sky",
+    "title": "Diamond in the Sky",
+    "featured": false,
+    "year": "2022",
+    "role": "System Architect, Team Diamonds",
+    "status": "NASA Global Winner",
+    "description": "Interactive space-learning app that teaches kids aged 10–12 about space science using official NASA data.",
+    "overview": [
+      "Built by Team Diamonds for the NASA International Space Apps Challenge 2022. The team first became National Champion in Bangladesh, then won the global Most Inspirational Award, one of the challenge's global winner categories.",
+      "The app makes stellar phenomena approachable for children aged 10 to 12, turning official NASA data into an interactive learning experience."
+    ],
+    "features": [
+      "Learn mode: interesting facts about stars and constellations",
+      "Play mode: draw a constellation's star pattern to advance a level",
+      "Later levels let kids vary a star's distance, temperature and mass to see how it changes",
+      "Built for the “Twinkle, Twinkle, Little Star” challenge on stellar variability"
+    ],
+    "tags": ["EdTech", "NASA Data", "Hackathon"],
+    "cover": { "style": "indigo", "icon": "sparkles", "text": "Diamond in the Sky" },
+    "links": {
+      "live": "https://2022.spaceappschallenge.org/challenges/2022-challenges/twinkle-twinkle-little-star/teams/team-diamonds/",
+      "liveLabel": "NASA Space Apps team page",
+      "github": "",
+      "article": "https://www.thedailystar.net/tech-startup/news/bangladeshi-team-wins-nasa-space-apps-challenge-2022-3194371"
+    },
+    "gallery": []
+  },
+  {
+    "slug": "beyond-cvss",
+    "title": "Beyond CVSS",
+    "featured": false,
+    "year": "2026",
+    "role": "Researcher",
+    "status": "Research",
+    "description": "Predicting which vulnerabilities will actually be exploited, beyond static CVSS scores.",
+    "overview": [
+      "A research project that uses CISA's Known Exploited Vulnerabilities (KEV) catalogue to train models that prioritise vulnerabilities by real-world exploitation risk rather than severity alone."
+    ],
+    "features": [
+      "Feature engineering from CVE, CVSS and KEV data",
+      "Exploitation-likelihood prediction models",
+      "Comparison against CVSS-only prioritisation"
+    ],
+    "tags": ["Python", "Jupyter", "ML", "Security"],
+    "cover": { "style": "crimson", "icon": "shield", "text": "Beyond CVSS" },
+    "links": { "live": "", "github": "https://github.com/ihsonnet/beyond-cvss-kev-prediction" },
+    "repo": "beyond-cvss-kev-prediction",
+    "gallery": []
+  },
+  {
+    "slug": "dbdiagram-pwa",
+    "title": "dbdiagram PWA",
+    "featured": false,
+    "year": "2026",
+    "role": "Creator",
+    "status": "Active",
+    "description": "Free ER-diagram tool with real-time sync between text, visual diagram and SQL.",
+    "overview": [
+      "A free, installable progressive web app for designing database schemas. Write DBML-style text, see the diagram update live, and export SQL."
+    ],
+    "features": [
+      "Two-way sync between text, diagram and SQL",
+      "Offline-capable PWA",
+      "Export to SQL and images"
+    ],
+    "tags": ["TypeScript", "PWA", "SQL"],
+    "cover": { "style": "indigo", "icon": "box", "text": "dbdiagram" },
+    "links": { "live": "", "github": "https://github.com/ihsonnet/dbdiagram-free-pwa" },
+    "repo": "dbdiagram-free-pwa",
+    "gallery": []
+  },
+  {
+    "slug": "covid19-visualization-bangladesh",
+    "title": "COVID-19 Visualizer BD",
+    "featured": false,
+    "year": "2020",
+    "role": "Developer",
+    "status": "Archived",
+    "description": "Interactive district-level map of COVID-19 cases across Bangladesh.",
+    "overview": [
+      "An interactive Bangladesh map that shows the latest COVID-19 figures for every district. Click a district to see its case count."
+    ],
+    "features": [
+      "Clickable SVG map of all 64 districts",
+      "Daily and cumulative case, recovery and death counts",
+      "Bangla-language interface"
+    ],
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "cover": { "image": "assets/projects/covid-visualization.png" },
+    "links": { "live": "", "github": "https://github.com/ihsonnet/Covid19-Visualization-Bangladesh" },
+    "repo": "Covid19-Visualization-Bangladesh",
+    "gallery": ["assets/projects/covid-visualization.png"]
+  },
+  {
+    "slug": "online-voting-system",
+    "title": "Online Voting System",
+    "featured": false,
+    "year": "2020",
+    "role": "Developer",
+    "status": "Archived",
+    "description": "Capstone CR election and voting management system written in C/C++.",
+    "overview": [
+      "A console-based class-representative election system built as a software development capstone project (SE-133)."
+    ],
+    "features": [
+      "Voter and candidate management",
+      "Secure one-person-one-vote casting",
+      "Automated tallying and results"
+    ],
+    "tags": ["C++", "C"],
+    "cover": { "image": "assets/projects/online-voting.png" },
+    "links": { "live": "", "github": "https://github.com/ihsonnet/Online-Voting-System-or-CR-Election-System" },
+    "repo": "Online-Voting-System-or-CR-Election-System",
+    "gallery": ["assets/projects/online-voting.png"]
+  }
+]

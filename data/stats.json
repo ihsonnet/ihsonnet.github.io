@@ -1,0 +1,6 @@
+{
+  "repositories": { "label": "Repositories", "caption": "Public repositories on GitHub" },
+  "followers":    { "label": "Followers",    "caption": "Following {following} · Joined {joined}" },
+  "stars":        { "label": "Total Stars",  "caption": "Across all my repositories" },
+  "languages":    { "title": "Most Used Languages", "top": 4 }
+}

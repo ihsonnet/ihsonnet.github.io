@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Injamamul Haque Sonet</title>
+  <meta name="description" content="Projects by Injamamul Haque Sonet — secure software, AI systems and education technology.">
+  <meta name="theme-color" content="#0a1421">
+  <meta property="og:title" content="Projects — Injamamul Haque Sonet">
+  <meta property="og:image" content="https://ihsonnet.com/assets/img/og.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/theme.js"></script>
+  <script type="module" src="js/projects.js"></script>
+</head>
+<body>
+
+  <section class="hero hero-page">
+    <div class="diamonds" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="shell">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Projects</span></nav>
+      <h1>All Projects</h1>
+      <p class="lead">Secure systems, AI tools and education platforms I’ve designed and built.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="shell">
+      <div class="toolbar">
+        <div class="chips" id="chips" role="group" aria-label="Filter by technology"></div>
+        <label class="search">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <span class="sr-only">Search projects</span>
+          <input id="search" type="search" placeholder="Search projects…" autocomplete="off">
+        </label>
+      </div>
+      <div class="project-grid wide" id="project-grid"></div>
+      <p class="empty" id="empty" hidden>No projects match your filters.</p>
+    </div>
+  </main>
+
+</body>
+</html>

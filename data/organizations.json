@@ -1,0 +1,16 @@
+{
+  "title": "Organizations",
+  "limit": 8,
+  "include": [
+    "WUST-Software-Division",
+    "team-diamonds",
+    "Dokanee",
+    "Dreamwinners-Technologies"
+  ],
+  "details": {
+    "WUST-Software-Division": { "role": "Software Security Engineer", "description": "", "url": "" },
+    "team-diamonds": { "role": "System Architect & Technical Lead", "description": "NASA Space Apps Challenge 2022 global winner, Most Inspirational Award.", "url": "" },
+    "Dokanee": { "role": "Founder & CEO", "description": "", "url": "" },
+    "Dreamwinners-Technologies": { "role": "Founder & Technical Lead", "description": "", "url": "" }
+  }
+}

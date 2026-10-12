@@ -1,0 +1,11 @@
+{
+  "limit": 6,
+  "pinned": [
+    { "name": "orbit-explorer",                             "icon": "code" },
+    { "name": "beyond-cvss-kev-prediction",                 "icon": "shield" },
+    { "name": "dbdiagram-free-pwa",                         "icon": "box" },
+    { "name": "rust-actix-web-crud",                        "icon": "box" },
+    { "name": "Online-Voting-System-or-CR-Election-System", "icon": "code" },
+    { "name": "Covid19-Visualization-Bangladesh",           "icon": "bot" }
+  ]
+}

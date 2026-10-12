@@ -1,0 +1,32 @@
+[
+  {
+    "group": "Security",
+    "icon": "shield",
+    "items": ["Software Security", "Spring Security", "Django Security", "Vulnerability Prioritization (CVSS · KEV)", "IoT Security Scanning", "CTF Problem Setting"]
+  },
+  {
+    "group": "Languages",
+    "icon": "terminal",
+    "items": ["Java", "TypeScript", "JavaScript", "Python", "Rust", "C / C++", "Dart"]
+  },
+  {
+    "group": "Backend",
+    "icon": "server",
+    "items": ["Spring Boot", "Spring Cloud Function", "Actix Web", "JPA / Hibernate", "REST APIs"]
+  },
+  {
+    "group": "Frontend & Mobile",
+    "icon": "layout",
+    "items": ["React", "Next.js", "Vue.js", "Vuetify", "Angular", "Tailwind CSS", "Three.js · D3", "Flutter"]
+  },
+  {
+    "group": "Data & Cloud",
+    "icon": "database",
+    "items": ["PostgreSQL", "MySQL", "Oracle DB", "Supabase", "Docker", "Azure Functions"]
+  },
+  {
+    "group": "AI / ML",
+    "icon": "bot",
+    "items": ["Agentic Engineering", "RAG", "MCP", "LLM Applications", "Machine Learning", "Jupyter", "AI-Assisted Assessment"]
+  }
+]
