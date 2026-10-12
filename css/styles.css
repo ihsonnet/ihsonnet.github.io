@@ -496,8 +496,9 @@ footer { background: linear-gradient(180deg, #0b1421, #0d1725); color: #aab3c0; 
 /* ---------- loading / reveal ---------- */
 .skeleton { background: linear-gradient(90deg, var(--surface-2), var(--line), var(--surface-2)); background-size: 200% 100%; animation: shimmer 1.3s infinite; border-radius: var(--radius); min-height: 120px; }
 @keyframes shimmer { to { background-position: -200% 0; } }
-.reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
-.reveal.in { opacity: 1; transform: none; }
+/* only hide when JS runs (theme.js adds .js), so no-JS visitors and crawlers see everything */
+.js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+.js .reveal.in { opacity: 1; transform: none; }
 .error-box { padding: 24px; border: 1px dashed var(--line); border-radius: var(--radius); color: var(--muted); text-align: center; }
 
 @media (prefers-reduced-motion: reduce) {

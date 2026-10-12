@@ -3,6 +3,7 @@
 (function () {
   var KEY = 'theme';
   var root = document.documentElement;
+  root.classList.add('js'); // lets CSS apply JS-only effects (scroll reveal)
   var media = window.matchMedia('(prefers-color-scheme: dark)');
 
   function stored() {

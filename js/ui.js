@@ -176,6 +176,20 @@ export function trackActiveSection() {
   window.addEventListener('scroll', update, { passive: true });
 }
 
+/* ---------- hero (also pre-rendered into index.html by tools/seo.mjs) ---------- */
+export function heroHTML(p) {
+  return `
+      <img class="avatar" src="${esc(p.avatar)}" alt="${esc(p.name)}" width="168" height="168" fetchpriority="high">
+      <h1>${esc(p.name)}</h1>
+      <p class="hero-headline">${esc(p.headline)}</p>
+      <p class="hero-roles">${p.roles.map(esc).join('<b>·</b>')}</p>
+      <p class="hero-tagline">${esc(p.tagline)}</p>
+      <div class="socials">${p.socials.map((s) => `
+        <a class="social" href="${esc(s.url)}"${s.url.startsWith('mailto:') ? '' : ' target="_blank" rel="noopener"'}>${icon(s.icon)}${esc(s.label)}</a>`).join('')}
+      </div>
+    `;
+}
+
 /* ---------- project cover & card ---------- */
 export function coverHTML(p, { eager = false } = {}) {
   const c = p.cover || {};

@@ -79,3 +79,14 @@ Then open http://localhost:3000 (serve) or http://localhost:8000 (python).
 ## Deploying
 
 Push to `master`/`main` and GitHub Pages serves the site as-is.
+
+## SEO
+
+- **Canonical address:** `https://ihsonnet.github.io`, set as `"url"` in `data/site.json`. All canonical, Open Graph and sitemap URLs use it.
+- **`tools/seo.mjs`** generates these from `data/*.json`:
+  - the hero and project cards, pre-rendered into `index.html` and `projects.html`, so crawlers and link previews see real content without running JavaScript;
+  - JSON-LD structured data: Person, WebSite, ProfilePage, FairMark AI as an Organization, and the projects list. Edit `seo` in `profile.json` to change job title, topics, affiliations, awards and other profiles;
+  - `sitemap.xml`, with every project page.
+- **Pre-commit hook:** `.githooks/pre-commit` runs the generator on every commit. Enable it once per clone with `git config core.hooksPath .githooks`, or run `node tools/seo.mjs` yourself after editing JSON.
+- **Project pages:** each sets its own title, description, canonical URL, share image and JSON-LD.
+- **Share image:** `assets/img/og.jpg`, 1200×630.

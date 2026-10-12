@@ -11,12 +11,11 @@ try {
   const index = projects.findIndex((p) => p.slug === slug);
 
   if (index === -1) {
+    setMeta('name', 'robots', 'noindex');
     renderNotFound();
   } else {
     const project = projects[index];
-    document.title = `${project.title} — ${profile.name}`;
-    document.querySelector('meta[name="description"]')?.setAttribute('content', project.description);
-
+    applySEO(project, site, profile);
     renderHero(project);
     renderBody(project, projects, index, site.github, null);
 
@@ -27,6 +26,64 @@ try {
   }
 } catch (err) {
   showFatal(err);
+}
+
+/* ---------- per-project SEO: title, meta, canonical, Open Graph, JSON-LD ---------- */
+function setMeta(attr, key, value) {
+  let el = document.head.querySelector(`meta[${attr}="${key}"]`);
+  if (!el) { el = document.createElement('meta'); el.setAttribute(attr, key); document.head.append(el); }
+  el.setAttribute('content', value);
+}
+
+function applySEO(p, site, profile) {
+  const base = site.url.replace(/\/$/, '');
+  const url = `${base}/project.html?slug=${encodeURIComponent(p.slug)}`;
+  const img = p.cover?.image || p.cover?.logo;
+  const image = img ? `${base}/${img}` : `${base}/assets/img/og.jpg`;
+  const title = `${p.title} — ${profile.name}`;
+  const description = p.description;
+
+  document.title = title;
+  setMeta('name', 'description', description);
+  document.head.querySelector('link[rel="canonical"]')?.setAttribute('href', url);
+  setMeta('property', 'og:title', title);
+  setMeta('property', 'og:description', description);
+  setMeta('property', 'og:url', url);
+  setMeta('property', 'og:image', image);
+  setMeta('name', 'twitter:title', title);
+  setMeta('name', 'twitter:description', description);
+  setMeta('name', 'twitter:image', image);
+
+  const links = p.links || {};
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'CreativeWork',
+        '@id': `${url}#work`,
+        name: p.title,
+        description,
+        url,
+        image,
+        keywords: (p.tags || []).join(', '),
+        dateCreated: /\d{4}/.exec(p.year || '')?.[0],
+        creator: { '@type': 'Person', '@id': `${base}/#person`, name: profile.name },
+        sameAs: [links.live, links.github, links.article].filter(Boolean),
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${base}/` },
+          { '@type': 'ListItem', position: 2, name: 'Projects', item: `${base}/projects.html` },
+          { '@type': 'ListItem', position: 3, name: p.title, item: url },
+        ],
+      },
+    ],
+  };
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(ld);
+  document.head.append(script);
 }
 
 function renderHero(p) {

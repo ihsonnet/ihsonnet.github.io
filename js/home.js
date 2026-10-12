@@ -1,5 +1,5 @@
 import {
-  $, esc, icon, loadAll, mountChrome, trackActiveSection, projectCard,
+  $, esc, icon, loadAll, mountChrome, trackActiveSection, projectCard, heroHTML,
   langColor, compact, timeAgo, reveal, showFatal,
 } from './ui.js';
 import { fetchGitHub, fetchOrgs, topLanguages } from './github.js';
@@ -60,18 +60,8 @@ function renderStatus(live) {
 
 /* ---------- hero ---------- */
 function renderHero(p) {
-  $('#hero-content').innerHTML = `
-    <img class="avatar" src="${esc(p.avatar)}" alt="${esc(p.name)}" width="168" height="168" fetchpriority="high">
-    <h1>${esc(p.name)}</h1>
-    <p class="hero-headline">${esc(p.headline)}</p>
-    <p class="hero-roles">${p.roles.map(esc).join('<b>·</b>')}</p>
-    <p class="hero-tagline">${esc(p.tagline)}</p>
-    <div class="socials">
-      ${p.socials.map((s) => `
-        <a class="social" href="${esc(s.url)}" ${s.url.startsWith('mailto:') ? '' : 'target="_blank" rel="noopener"'}>
-          ${icon(s.icon)}${esc(s.label)}
-        </a>`).join('')}
-    </div>`;
+  // tools/seo.mjs pre-renders the same markup into index.html for crawlers
+  $('#hero-content').innerHTML = heroHTML(p);
 }
 
 /* ---------- projects ---------- */
@@ -242,7 +232,7 @@ function renderAbout(p) {
       ${p.about.map((t) => `<p>${esc(t)}</p>`).join('')}
       <dl class="about-meta">
         <div><dt>Based in</dt><dd>${p.locations.map(esc).join(' · ')}</dd></div>
-        <div><dt>Focus</dt><dd>${p.roles.map(esc).join(' · ')}</dd></div>
+        <div><dt>Focus</dt><dd>${(p.focus || p.roles).map(esc).join(' · ')}</dd></div>
       </dl>
     </div>
 

@@ -182,10 +182,10 @@
       "Bangla-language interface"
     ],
     "tags": ["HTML", "CSS", "JavaScript"],
-    "cover": { "image": "assets/projects/covid-visualization.png" },
+    "cover": { "image": "assets/projects/covid-visualization.jpg" },
     "links": { "live": "", "github": "https://github.com/ihsonnet/Covid19-Visualization-Bangladesh" },
     "repo": "Covid19-Visualization-Bangladesh",
-    "gallery": ["assets/projects/covid-visualization.png"]
+    "gallery": ["assets/projects/covid-visualization.jpg"]
   },
   {
     "slug": "online-voting-system",
@@ -204,9 +204,9 @@
       "Automated tallying and results"
     ],
     "tags": ["C++", "C"],
-    "cover": { "image": "assets/projects/online-voting.png" },
+    "cover": { "image": "assets/projects/online-voting.jpg" },
     "links": { "live": "", "github": "https://github.com/ihsonnet/Online-Voting-System-or-CR-Election-System" },
     "repo": "Online-Voting-System-or-CR-Election-System",
-    "gallery": ["assets/projects/online-voting.png"]
+    "gallery": ["assets/projects/online-voting.jpg"]
   }
 ]

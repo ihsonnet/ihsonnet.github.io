@@ -1,6 +1,6 @@
 {
   "name": "Injamamul Haque Sonet",
-  "avatar": "assets/img/profile.png",
+  "avatar": "assets/img/profile.webp",
   "headline": "Software Security Engineer · Education Technologist",
   "roles": [
     "Secure Software",
@@ -9,12 +9,30 @@
   ],
   "tagline": "I build secure, scalable systems that solve real-world problems and empower education through technology.",
   "aboutTitle": "Building software that’s secure by design, and AI technology that reimagines education.",
+  "focus": ["Education Technology", "Secure Software", "AI Systems", "System Architecture"],
   "availability": "Open to collaborations & new opportunities",
   "about": [
     "I'm a software security engineer who enjoys designing systems that are safe by default — from authentication flows and access control to threat modelling and vulnerability prioritisation.",
     "Alongside engineering, I work on education technology: building tools that make assessment fairer and learning more accessible, and judging and mentoring EdTech teams around the world."
   ],
   "resume": "",
+  "seo": {
+    "jobTitle": "Software Security Engineer",
+    "knowsAbout": [
+      "Software Security", "Application Security", "Vulnerability Prioritization",
+      "Agentic Engineering", "Retrieval-Augmented Generation", "AI in Education",
+      "System Architecture", "Spring Boot"
+    ],
+    "affiliation": { "name": "Washington University of Science and Technology", "url": "https://wust.edu" },
+    "alumniOf": { "name": "Daffodil International University", "url": "https://daffodilvarsity.edu.bd" },
+    "worksFor": [{ "name": "FairMark AI", "url": "https://fairmarkai.com", "founder": true }],
+    "awards": ["Most Inspirational Award, NASA International Space Apps Challenge 2022"],
+    "sameAs": [
+      "https://portfolio.ihsonnet.com",
+      "https://scholar.google.com/citations?user=6GVIH1MAAAAJ",
+      "https://qsrea.evessiocloud.com/Reimagine2026/en/node/judgeprofile-injamamul-haque-sonet"
+    ]
+  },
   "locations": [
     "Alexandria, VA, USA"
   ],
