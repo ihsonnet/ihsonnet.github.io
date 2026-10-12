@@ -61,6 +61,11 @@
       "label": "Website",
       "icon": "link",
       "url": "https://ihsonnet.com"
+    },
+    {
+      "label": "Portfolio",
+      "icon": "briefcase",
+      "url": "https://portfolio.ihsonnet.com"
     }
   ]
 }
